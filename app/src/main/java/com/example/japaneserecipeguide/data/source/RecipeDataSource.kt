@@ -1,7 +1,7 @@
 package com.example.japaneserecipeguide.data.source
 
 import com.example.japaneserecipeguide.data.model.*
-
+import com.example.japaneserecipeguide.R
 object RecipeDataSource {
     val recipes = listOf(
         Recipe(
@@ -13,7 +13,7 @@ object RecipeDataSource {
             prepTimeMinutes = 5,
             cookTimeMinutes = 10,
             servings = 2,
-            imageUrl = "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Miso_Soup.jpg/640px-Miso_Soup.jpg",
+            imageRes = R.drawable.miso_soup,
             description = "Canh miso truyền thống với đậu phụ và rong biển wakame.",
             ingredients = listOf(
                 Ingredient("Nước dashi", "500ml"),
@@ -40,7 +40,7 @@ object RecipeDataSource {
             prepTimeMinutes = 15,
             cookTimeMinutes = 20,
             servings = 2,
-            imageUrl = "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Tonkatsu_01.jpg/640px-Tonkatsu_01.jpg",
+            imageRes = R.drawable.tonkatsu,
             description = "Thịt heo tẩm breadcrumb chiên giòn, ăn kèm cơm trắng và sốt tonkatsu.",
             ingredients = listOf(
                 Ingredient("Thịt heo thăn", "300g (2 miếng)"),
@@ -68,7 +68,7 @@ object RecipeDataSource {
             prepTimeMinutes = 20,
             cookTimeMinutes = 0,
             servings = 4,
-            imageUrl = "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Onigiri.jpg/640px-Onigiri.jpg",
+            imageRes = R.drawable.onigiri,
             description = "Cơm nắm tam giác với nhân cá hồi, bọc rong biển nori.",
             ingredients = listOf(
                 Ingredient("Cơm Nhật nấu chín", "400g"),
@@ -95,7 +95,7 @@ object RecipeDataSource {
             prepTimeMinutes = 30,
             cookTimeMinutes = 180,
             servings = 2,
-            imageUrl = "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Ramen-Shoyu.jpg/640px-Ramen-Shoyu.jpg",
+            imageRes = R.drawable.ramen,
             description = "Mì ramen nước dùng tonkotsu đậm đà, với chashu heo, trứng lòng đào và nori.",
             ingredients = listOf(
                 Ingredient("Mì ramen tươi", "200g"),
@@ -128,7 +128,7 @@ object RecipeDataSource {
             prepTimeMinutes = 20,
             cookTimeMinutes = 15,
             servings = 4,
-            imageUrl = "https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/Takoyaki_001.jpg/640px-Takoyaki_001.jpg",
+            imageRes = R.drawable.takoyaki,
             description = "Bánh bạch tuộc nướng hình cầu, đặc sản đường phố Osaka nổi tiếng.",
             ingredients = listOf(
                 Ingredient("Bột takoyaki (hoặc bột mì)", "200g"),
@@ -160,7 +160,7 @@ object RecipeDataSource {
             prepTimeMinutes = 40,
             cookTimeMinutes = 0,
             servings = 4,
-            imageUrl = "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Makisushi1.jpg/640px-Makisushi1.jpg",
+            imageRes = R.drawable.sushi,
             description = "Cơm sushi cuộn với cá hồi, bơ và dưa leo, chấm wasabi và xì dầu.",
             ingredients = listOf(
                 Ingredient("Cơm Nhật", "300g"),
@@ -192,7 +192,7 @@ object RecipeDataSource {
             prepTimeMinutes = 20,
             cookTimeMinutes = 15,
             servings = 2,
-            imageUrl = "https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/Tempura_500.jpg/640px-Tempura_500.jpg",
+            imageRes = R.drawable.tempura,
             description = "Tôm chiên bột tempura giòn tan, ăn kèm nước chấm tentsuyu.",
             ingredients = listOf(
                 Ingredient("Tôm sú", "8 con"),
@@ -223,7 +223,7 @@ object RecipeDataSource {
             prepTimeMinutes = 40,
             cookTimeMinutes = 15,
             servings = 4,
-            imageUrl = "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Jiaozi_by_Muband.jpg/640px-Jiaozi_by_Muband.jpg",
+            imageRes = R.drawable.gyoza,
             description = "Há cảo chiên kiểu Nhật, vỏ giòn đáy vàng, nhân thịt heo và cải thảo.",
             ingredients = listOf(
                 Ingredient("Vỏ gyoza", "30 cái"),
@@ -254,7 +254,7 @@ object RecipeDataSource {
             prepTimeMinutes = 15,
             cookTimeMinutes = 30,
             servings = 4,
-            imageUrl = "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Matcha_Latte_art.jpg/640px-Matcha_Latte_art.jpg",
+            imageRes = R.drawable.matcha_pudding,
             description = "Bánh flan matcha mềm mịn, vị trà xanh đặc trưng, thanh mát.",
             ingredients = listOf(
                 Ingredient("Bột matcha", "2 muỗng canh"),
@@ -283,7 +283,7 @@ object RecipeDataSource {
             prepTimeMinutes = 10,
             cookTimeMinutes = 15,
             servings = 2,
-            imageUrl = "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Yaki_udon.jpg/640px-Yaki_udon.jpg",
+            imageRes = R.drawable.udon,
             description = "Mì udon xào với rau củ và thịt bò, sốt xì dầu đậm đà.",
             ingredients = listOf(
                 Ingredient("Mì udon tươi", "400g"),
@@ -314,7 +314,7 @@ object RecipeDataSource {
             prepTimeMinutes = 20,
             cookTimeMinutes = 20,
             servings = 2,
-            imageUrl = "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Okonomiyaki_02.jpg/640px-Okonomiyaki_02.jpg",
+            imageRes = R.drawable.okonomiyaki,
             description = "Bánh xèo Nhật với bắp cải, tôm và sốt đặc trưng okonomiyaki.",
             ingredients = listOf(
                 Ingredient("Bột mì", "100g"),
@@ -346,7 +346,7 @@ object RecipeDataSource {
             prepTimeMinutes = 15,
             cookTimeMinutes = 20,
             servings = 4,
-            imageUrl = "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/Chawanmushi.jpg/640px-Chawanmushi.jpg",
+            imageRes = R.drawable.chawanmushi,
             description = "Trứng hấp kiểu Nhật mềm mịn như tofu, với tôm, nấm và hạt bạch quả.",
             ingredients = listOf(
                 Ingredient("Trứng", "3 quả"),
@@ -377,7 +377,7 @@ object RecipeDataSource {
             prepTimeMinutes = 15,
             cookTimeMinutes = 20,
             servings = 6,
-            imageUrl = "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Dorayaki_00001.jpg/640px-Dorayaki_00001.jpg",
+            imageRes = R.drawable.dorayaki,
             description = "Bánh rán mật ong kẹp nhân đậu đỏ ngọt bùi — món tráng miệng yêu thích của Doraemon!",
             ingredients = listOf(
                 Ingredient("Bột mì", "100g"),

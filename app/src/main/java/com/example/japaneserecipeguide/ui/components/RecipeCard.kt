@@ -1,5 +1,7 @@
 package com.example.japaneserecipeguide.ui.components
 
+import androidx.compose.ui.res.painterResource
+import androidx.compose.foundation.Image
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.shape.RoundedCornerShape
@@ -27,7 +29,7 @@ fun RecipeCard(recipe: Recipe, onClick: () -> Unit) {
     ) {
         Row(modifier = Modifier.padding(12.dp)) {
             AsyncImage(
-                model = recipe.imageUrl,
+                model = recipe.imageRes,
                 contentDescription = recipe.name,
                 contentScale = ContentScale.Crop,
                 modifier = Modifier

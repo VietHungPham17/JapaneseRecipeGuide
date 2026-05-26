@@ -1,5 +1,7 @@
 package com.example.japaneserecipeguide.ui.screen
 
+import androidx.compose.ui.res.painterResource
+import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.itemsIndexed
@@ -45,7 +47,7 @@ fun DetailScreen(recipeId: Int, onBack: () -> Unit) {
         ) {
             item {
                 AsyncImage(
-                    model = recipe.imageUrl,
+                    model = recipe.imageRes,
                     contentDescription = recipe.name,
                     contentScale = ContentScale.Crop,
                     modifier = Modifier
